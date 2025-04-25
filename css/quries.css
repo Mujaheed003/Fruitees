@@ -263,16 +263,22 @@
         display: none;
     }
 
+    .main-text-container {
+        place-items: center;
+        text-align: center;
+    }
+
     .main-text-container p {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hero button {
         place-self: center;
+        font-size: 3rem;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4.2rem;
     }
 
     h2 {
@@ -289,7 +295,7 @@
 
     /* ABOUT */
     .main-buttons button {
-        padding: .5rem .7REM;
+        padding: .5rem .4rem;
         font-size: 1.2rem;
         border-radius: 2rem;
     }
@@ -332,7 +338,26 @@
     }
 
     .subheading-content {
+        margin-top: 4rem;
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .subheading-text h2 {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    .subheading-text p {
+        font-size: 3rem;
+    }
+
+    .subheading-text ul li {
+        font-size: 1.8rem;
+    }
+    
+    .subheading-text ul li ion-icon{
+        font-size: 2rem;
     }
 
 
@@ -357,8 +382,12 @@
     }
 
     .about-text p {
-        font-size: 2rem;
+        font-size: 3rem;
         width: 100%;
+    }
+
+    .about-text button {
+        font-size: 3rem;
     }
 
      /* RECIPE SECTION */
