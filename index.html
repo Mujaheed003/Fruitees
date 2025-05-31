@@ -1,372 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fruitees</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/quries.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo"><h3>fruitees<span>.</span></h3></div>
-            <nav>
-                <ul>
-                    <li><a href="">Shop All</a></li>
-                    <li><a href="">Flavors</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Recipes</a></li>
-                    <li><a href="">Our Mission</a></li>
-                </ul>
-                
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruitees</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
 
-            <div class="nav-action">
-                <ion-icon name="search-outline"></ion-icon>
-                <ion-icon name="bag-outline"></ion-icon>
-                <button>Juice Up <ion-icon name="arrow-forward-outline"></ion-icon></button>
+      <div class="nav-action">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="bag-outline"></ion-icon>
+        <button>
+           <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-icon name="close"></ion-icon> -->
+
+      <nav>
+        <ul class="side-bar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><img src="assets/img/close.png" alt="" width="30px"
+            /></a>
+          </li>
+          <li><a href="#">Shop All</a></li>
+          <li><a href="#">Flavors</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Juice Up</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>fruitees<span>.</span></h3></a
+            >
+          </li>
+          <li><a class="hideOnMobile" href="#">Shop All</a></li>
+          <li><a class="hideOnMobile" href="#">Flavors</a></li>
+          <li><a class="hideOnMobile" href="#">About Us</a></li>
+          <li><a class="hideOnMobile" href="#">Recipes</a></li>
+          <li><a class="hideOnMobile" href="#">Our Mission</a></li>
+          <li><a class="hideOnMobile" href="#">Juice Up</a></li>
+          </li>
+          <li onclick="showSidebar()">
+            <a class="menu-button" href="#"
+              ><img src="assets/img/menu.png" alt="" width="20"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="main-text-container">
+          <h1>Savour <em>the jucy essence</em> of fruit in every sip.</h1>
+          <p>
+            Test nature's best in every drop with real fruit and vibrant flavour
+          </p>
+          <button>
+            Sip Fresh <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="hero-image-container">
+          <img src="assets/img/1.png" alt="hero-image" />
+        </div>
+        <div class="start-container">
+          <div class="mimi-image">
+            <img src="assets/img/8.jpg" alt="start.profile" width="64px" />
+            <h4>Frruitees</h4>
+            <p>POWERED BY</p>
+          </div>
+          <div class="percentage">
+            <h3>78%</h3>
+            <p>Natural ingredients <br />used in flavour</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flavours-main-heading">
+          <h2><em>Discover</em> our range -</h2>
+          <div class="main-buttons">
+            <button class="active">Best Seller</button>
+            <button>Simple Order</button>
+            <button>Weekly Order</button>
+          </div>
+        </div>
+        <div class="flavours-container">
+          <div class="flavours">
+            <img src="assets/img/all.jpg" alt="All flavours" width="250px" />
+            <p class="flavour-title">All-in-one package</p>
+            <div class="flavours-description">
+              <p class="pack"><strong>Box</strong>(12 Pack)</p>
+              <p class="prize">
+                <strong>$</strong>24.99
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </p>
             </div>
-            <ion-icon name="menu-outline"></ion-icon>
-            <ion-icon name="close"></ion-icon>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <div class="main-text-container">
-                    <h1>Savour <em>the jucy essence</em> of fruit in every sip.</h1>
-                    <p>Test nature's best in every drop with real fruit and vibrant flavour</p>
-                    <button>Sip Fresh <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <div class="hero-image-container">
-                    <img src="assets/img/1.png" alt="hero-image" >
-                </div>
-                <div class="start-container">
-                    <div class="mimi-image">
-                        <img src="assets/img/8.jpg" alt="start.profile" width="64px">
-                        <h4>Frruitees</h4>
-                        <p> POWERED BY</p>
-                    </div>
-                    <div class="percentage">
-                        <h3>78%</h3>
-                        <p>Natural ingredients <br>used in flavour</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="flavours-main-heading">
-                    <h2><em>Discover</em> our range -</h2>
-                    <div class="main-buttons">
-                        <button class="active">Best Seller</button>
-                        <button>Simple Order</button>
-                        <button>Weekly Order</button>
-                    </div>
-                </div>
-                <div class="flavours-container">
-                    <div class="flavours">
-                        <img src="assets/img/all.jpg" alt="All flavours" width="250px">
-                        <p class="flavour-title">All-in-one package</p>
-                        <div class="flavours-description">
-                            <p class="pack"><strong>Box</strong>(12 Pack)</p>
-                            <p class="prize"><strong>$</strong>24.99 <ion-icon name="chevron-down-outline"></ion-icon></p>
-                        </div>
-                    </div>
-                    <div class="flavours">
-                        <img src="assets/img/2.jpg" alt="Passion fruit lemon" width="250px">
-                        <p class="flavour-title">All-in-one package</p>
-                        <div class="flavours-description">
-                            <p class="pack"><strong>Box</strong>(12 Pack)</p>
-                            <p class="prize"><strong>$</strong>24.99 <ion-icon name="chevron-down-outline"></ion-icon></p>
-                        </div>
-                    </div>
-                    <div class="flavours">
-                        <img src="assets/img/9.jpg" alt="coke" width="250px">
-                        <p class="flavour-title">Coke</p>
-                        <div class="flavours-description">
-                            <p class="pack"><strong>Box</strong>(12 Pack)</p>
-                            <p class="prize"><strong>$</strong>24.99 <ion-icon name="chevron-down-outline"></ion-icon></p>
-                        </div>
-                    </div>
-                    <div class="flavours">
-                        <img src="assets/img/11.jpg" alt="Hibiscus Dragon ffruit" width="250px">
-                        <p class="flavour-title">Hibiscus Dragon ffruit</p>
-                        <div class="flavours-description">
-                            <p class="pack"><strong>Box</strong>(12 Pack)</p>
-                            <p class="prize"><strong>$</strong>24.99 <ion-icon name="chevron-down-outline"></ion-icon></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flavour-sub-heading">
-                    <h2>Huge Benefits &#128064; inside <br> our detoxifide <em>fruitees</em></h2>
-                    <div class="sub-flavour-container">
-                        <div class="sub-flavour">
-                            <img src="assets/img/strawberry.jpg" alt="Strawberry" width="64px">
-                            <p class="sub-title">Antioxidant fuitees</p>
-                        </div>
-                        <div class="sub-flavour">
-                            <img src="assets/img/blueberry.jpg" alt="Blueberry" width="64px">
-                            <p class="sub-title">Electrolytes</p>
-                        </div>
-                        <div class="sub-flavour">
-                            <img src="assets/img/coconut-main.jpg" alt="Unpilled Coconut" width="64px">
-                            <p class="sub-title">Prebiotic</p>
-                        </div>
-                        <div class="sub-flavour">
-                            <img src="assets/img/coconut.jpg" alt="Coconut" width="64px">
-                            <p class="sub-title">Timunity</p>
-                        </div>
-                        <div class="sub-flavour">
-                            <img src="assets/img/cocumber.jpg" alt="Cocumber" width="64px">
-                            <p class="sub-title">Detox</p>
-                        </div>
-                    </div>
-
-                    <div class="subheading-content">
-                        <div class="subheading-image-container">
-                            <img src="assets/img/all.jpg" alt="Fruit drink" >
-                        </div>
-                        <div class="subheading-text">
-                            <h2>Drink real fruit every time</h2>
-                            <p>
-                                Enjoy the pure taste of free fruits, refreshing, natural, and absolutely delicious.
-                            </p>
-                            <ul>
-                                <li>
-                                    <ion-icon name="checkmark-outline"></ion-icon> Natural cremy texture without diary content
-                                </li>
-                                <li>
-                                    <ion-icon name="checkmark-outline"></ion-icon> No artificial flavours, everything comes from nature
-                                </li>
-                                <li>
-                                    <ion-icon name="checkmark-outline"></ion-icon> Zero sweetners used zero sugar content
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="abt-cnt">
-                <div class="about-ctn">
-                    <div class="about-top-img-ctn">
-                        <img src="assets/img/7.jpg" alt="">
-                    </div>
-                    <div class="about-text">
-                        <h2>Indulge in the fresh  taste of fruits</h2>
-                        <p>
-                            Our drinks are crafted to energize your day and satisfy your cravings
-                        </p>
-                        <button>Slip Now <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                    </div>
-                    <div class="about-image-container">
-                        <img src="assets/img/6.png" alt="Fruit drinks" width="250px">
-                    </div>
-                    <div class="percentage">
-                        <h3>85%</h3>
-                        <p>Plant-based <br>ingredients in recipe</p>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="recipe-main-heading">
-                    <h2>Sippin' on social</h2>
-                    <p>Raise your glass and celebrate <br> with Social Sips!</p>
-                    <div class="recip-side-logo">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                        <h3 class="logo">fruitees<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="recipe-container">
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/5.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@chrisallan</p>
-                        </div>
-                    </div>
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/3.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@chrisallan</p>
-                        </div>
-                    </div>
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/pour-cup.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@lipadua</p>
-                        </div>
-                    </div>
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/8.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@hamschris</p>
-                        </div>
-                    </div>
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/4.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@alldaepow</p>
-                        </div>
-                    </div>
-                    <div class="recipe-box">
-                        <div class="recipe-image-container">
-                            <img src="assets/img/7.jpg" alt="" width="200px">
-                        </div>
-                        <div class="recipe-text">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <p>@rylicstudio</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="our-mssn">
-                    <h4 class="emoji">😍</h4>
-                    <h2>Our customers <em>love us</em></h2>
-                    <div class="our-mission-container">
-                        <div class="mission-box">
-                            <h3>Delicious! Great blend!</h3>
-                            <p>
-                                I like ginger due to the kick in the flavor. This was different from other drinks since it's carbonated. Flavor from the carbon & ginger. tapered off by peach.
-                            </p> 
-                            
-                            <div class="profile-details">
-                                <div class="profile-image-container">
-                                    <img src="assets/img/profile-1.jpg" alt="" width="50px">
-                                    <div class="profile-name">
-                                        <h4>Ellot Mark</h4>
-                                        <p>@rylicstudio</p>
-                                    </div>
-                                </div>
-                                <div class="profile-icon">
-                                    <p>5.0 ⭐</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mission-box">
-                            <h3>Light and grat taste</h3>
-                            <p>
-                                Tried this at the coffee expo, love the concept and the benefits. Not too sweet but can add syrups to sweeten it. I love that the taste that is really refreshing!
-                            </p>
-                            <div class="profile-details">
-                                <div class="profile-image-container">
-                                    <img src="assets/img/profile-2.jpg" alt="" width="50px">
-                                    <div class="profile-name">
-                                        <h4>Ellot Mark</h4>
-                                        <p>@rylicstudio</p>
-                                    </div>
-                                </div>
-                                <div class="profile-icon">
-                                    <p>5.0 ⭐</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mission-box">
-                            <h3>Great pick me up!</h3>
-                            <p>
-                                I'll definitely be enjoying this refreshing drink again and highly recommend it to anyone seeking a unique and healthy alternative to traditional iced beverages
-                            </p>
-                            <div class="profile-details">
-                                <div class="profile-image-container">
-                                    <img src="assets/img/profile-3.jpg" alt="" width="50px">
-                                    <div class="profile-name">
-                                        <h4>Ellot Mark</h4>
-                                        <p>@rylicstudio</p>
-                                    </div>
-                                </div>
-                                <div class="profile-icon">
-                                    <p>5.0 ⭐</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="down-img-container">
-                        <img src="assets/img/mission.png" alt="">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-`           <div class="footer-container">
-                <div class="footer-text first-footer">
-                    <h3 class="logo">fruitees<span>.</span></h3>
-                    <p>
-                        Fuel your day with bold bubbles and real superfruits. Blast of antioxidants and natural energy.
-                    </p>
-                    <div class="footer-icons">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </div>
-                </div>
-                <div class="footer-text">
-                    <h6>About</h6>
-                    <ul>
-                        <li>Our Story</li>
-                        <li>Core Value</li>
-                        <li>News</li>
-                        <li>Press</li>
-                    </ul>
-                </div>
-                <div class="footer-text">
-                    <h6>Support</h6>
-                    <ul>
-                        <li>Refund Policy</li>
-                        <li>Return Form</li>
-                        <li>Contact Us</li>
-                        <li>Help Center</li>
-                    </ul>
-                </div>
-                <div class="footer-text">
-                    <h6>More Info</h6>
-                    <ul>
-                        <li>Blog</li>
-                        <li>Recipes</li>
-                        <li>Shipping Policy</li>
-                        <li>Giving Back</li>
-                    </ul>
-                </div>
-                <div class="footer-text ">
-                    <h6>Contact Us</h6>
-                    <p>(415) 762-3984 <br>
-                        Info@gmail.com
-                    </p>
-                    <p>3425 Willow Creek <br> 
-                        Dr. Madison, WI 53705
-                    </p>
-                </div>
+          </div>
+          <div class="flavours">
+            <img
+              src="assets/img/2.jpg"
+              alt="Passion fruit lemon"
+              width="250px"
+            />
+            <p class="flavour-title">All-in-one package</p>
+            <div class="flavours-description">
+              <p class="pack"><strong>Box</strong>(12 Pack)</p>
+              <p class="prize">
+                <strong>$</strong>24.99
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </p>
             </div>
-            <hr>
-            <div class="last-footer">
-                <p>&copy;<span>fruitees</span> 2025 All Right Reserved</p>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Site Map</li>
-                    <li>Terms & Condition</li>
-                </ul>
-                <p>Developed by <span>Paritie Students</span></p>
+          </div>
+          <div class="flavours">
+            <img src="assets/img/9.jpg" alt="coke" width="250px" />
+            <p class="flavour-title">Coke</p>
+            <div class="flavours-description">
+              <p class="pack"><strong>Box</strong>(12 Pack)</p>
+              <p class="prize">
+                <strong>$</strong>24.99
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </p>
             </div>
-        </footer>
-    </body>
+          </div>
+          <div class="flavours">
+            <img
+              src="assets/img/11.jpg"
+              alt="Hibiscus Dragon ffruit"
+              width="250px"
+            />
+            <p class="flavour-title">Hibiscus Dragon ffruit</p>
+            <div class="flavours-description">
+              <p class="pack"><strong>Box</strong>(12 Pack)</p>
+              <p class="prize">
+                <strong>$</strong>24.99
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flavour-sub-heading">
+          <h2>
+            Huge Benefits &#128064; inside <br />
+            our detoxifide <em>fruitees</em>
+          </h2>
+          <div class="sub-flavour-container">
+            <div class="sub-flavour">
+              <img
+                src="assets/img/strawberry.jpg"
+                alt="Strawberry"
+                width="64px"
+              />
+              <p class="sub-title">Antioxidant fuitees</p>
+            </div>
+            <div class="sub-flavour">
+              <img
+                src="assets/img/blueberry.jpg"
+                alt="Blueberry"
+                width="64px"
+              />
+              <p class="sub-title">Electrolytes</p>
+            </div>
+            <div class="sub-flavour">
+              <img
+                src="assets/img/coconut-main.jpg"
+                alt="Unpilled Coconut"
+                width="64px"
+              />
+              <p class="sub-title">Prebiotic</p>
+            </div>
+            <div class="sub-flavour">
+              <img src="assets/img/coconut.jpg" alt="Coconut" width="64px" />
+              <p class="sub-title">Timunity</p>
+            </div>
+            <div class="sub-flavour">
+              <img src="assets/img/cocumber.jpg" alt="Cocumber" width="64px" />
+              <p class="sub-title">Detox</p>
+            </div>
+          </div>
+
+          <div class="subheading-content">
+            <div class="subheading-image-container">
+              <img src="assets/img/all.jpg" alt="Fruit drink" />
+            </div>
+            <div class="subheading-text">
+              <h2>Drink real fruit every time</h2>
+              <p>
+                Enjoy the pure taste of free fruits, refreshing, natural, and
+                absolutely delicious.
+              </p>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon> Natural cremy
+                  texture without diary content
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon> No artificial
+                  flavours, everything comes from nature
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon> Zero sweetners
+                  used zero sugar content
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="abt-cnt">
+        <div class="about-ctn">
+          <div class="about-top-img-ctn">
+            <img src="assets/img/7.jpg" alt="" />
+          </div>
+          <div class="about-text">
+            <h2>Indulge in the fresh taste of fruits</h2>
+            <p>
+              Our drinks are crafted to energize your day and satisfy your
+              cravings
+            </p>
+            <button>
+              Slip Now <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="about-image-container">
+            <img src="assets/img/6.png" alt="Fruit drinks" width="250px" />
+          </div>
+          <div class="percentage">
+            <h3>85%</h3>
+            <p>Plant-based <br />ingredients in recipe</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="recipe-main-heading">
+          <h2>Sippin' on social</h2>
+          <p>
+            Raise your glass and celebrate <br />
+            with Social Sips!
+          </p>
+          <div class="recip-side-logo">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <h3 class="logo">fruitees<span>.</span></h3>
+          </div>
+        </div>
+        <div class="recipe-container">
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/5.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@chrisallan</p>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/3.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@chrisallan</p>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/pour-cup.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@lipadua</p>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/8.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@hamschris</p>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/4.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@alldaepow</p>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <div class="recipe-image-container">
+              <img src="assets/img/7.jpg" alt="" width="200px" />
+            </div>
+            <div class="recipe-text">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <p>@rylicstudio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-mssn">
+          <h4 class="emoji">😍</h4>
+          <h2>Our customers <em>love us</em></h2>
+          <div class="our-mission-container">
+            <div class="mission-box">
+              <h3>Delicious! Great blend!</h3>
+              <p>
+                I like ginger due to the kick in the flavor. This was different
+                from other drinks since it's carbonated. Flavor from the carbon
+                & ginger. tapered off by peach.
+              </p>
+
+              <div class="profile-details">
+                <div class="profile-image-container">
+                  <img src="assets/img/profile-1.jpg" alt="" width="50px" />
+                  <div class="profile-name">
+                    <h4>Ellot Mark</h4>
+                    <p>@rylicstudio</p>
+                  </div>
+                </div>
+                <div class="profile-icon">
+                  <p>5.0 ⭐</p>
+                </div>
+              </div>
+            </div>
+            <div class="mission-box">
+              <h3>Light and grat taste</h3>
+              <p>
+                Tried this at the coffee expo, love the concept and the
+                benefits. Not too sweet but can add syrups to sweeten it. I love
+                that the taste that is really refreshing!
+              </p>
+              <div class="profile-details">
+                <div class="profile-image-container">
+                  <img src="assets/img/profile-2.jpg" alt="" width="50px" />
+                  <div class="profile-name">
+                    <h4>Ellot Mark</h4>
+                    <p>@rylicstudio</p>
+                  </div>
+                </div>
+                <div class="profile-icon">
+                  <p>5.0 ⭐</p>
+                </div>
+              </div>
+            </div>
+            <div class="mission-box">
+              <h3>Great pick me up!</h3>
+              <p>
+                I'll definitely be enjoying this refreshing drink again and
+                highly recommend it to anyone seeking a unique and healthy
+                alternative to traditional iced beverages
+              </p>
+              <div class="profile-details">
+                <div class="profile-image-container">
+                  <img src="assets/img/profile-3.jpg" alt="" width="50px" />
+                  <div class="profile-name">
+                    <h4>Ellot Mark</h4>
+                    <p>@rylicstudio</p>
+                  </div>
+                </div>
+                <div class="profile-icon">
+                  <p>5.0 ⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="down-img-container">
+            <img src="assets/img/mission.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      `
+      <div class="footer-container">
+        <div class="footer-text first-footer">
+          <h3 class="logo">fruitees<span>.</span></h3>
+          <p>
+            Fuel your day with bold bubbles and real superfruits. Blast of
+            antioxidants and natural energy.
+          </p>
+          <div class="footer-icons">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+        </div>
+        <div class="footer-text">
+          <h6>About</h6>
+          <ul>
+            <li>Our Story</li>
+            <li>Core Value</li>
+            <li>News</li>
+            <li>Press</li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <h6>Support</h6>
+          <ul>
+            <li>Refund Policy</li>
+            <li>Return Form</li>
+            <li>Contact Us</li>
+            <li>Help Center</li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <h6>More Info</h6>
+          <ul>
+            <li>Blog</li>
+            <li>Recipes</li>
+            <li>Shipping Policy</li>
+            <li>Giving Back</li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <h6>Contact Us</h6>
+          <p>
+            (415) 762-3984 <br />
+            Info@gmail.com
+          </p>
+          <p>
+            3425 Willow Creek <br />
+            Dr. Madison, WI 53705
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="last-footer">
+        <p>&copy;<span>fruitees</span> 2025 All Right Reserved</p>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Site Map</li>
+          <li>Terms & Condition</li>
+        </ul>
+        <p>Developed by <span>Paritie Students</span></p>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sideBar = document.querySelector(".side-bar");
+        sideBar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sideBar = document.querySelector(".side-bar");
+        sideBar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
